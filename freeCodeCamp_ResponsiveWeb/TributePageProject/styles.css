@@ -1,0 +1,27 @@
+#main {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:auto;
+    padding:15px;
+    border-radius: 10px;
+    background-color: rgb(206, 193, 196);
+}
+
+img {
+    max-width:100%;
+    display:block;
+    height:auto;
+    margin:0 auto;
+}
+
+h1, h2, p, figcaption {
+    text-align: center;
+}
+
+figcaption{
+    font-size:12px;
+}
+
+hr.rounded {
+    border-top: 3px solid rgb(73, 68, 68);
+    border-radius: 1px;
+}

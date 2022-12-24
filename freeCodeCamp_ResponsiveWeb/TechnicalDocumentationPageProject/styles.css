@@ -1,0 +1,46 @@
+@media (max-width: 800px) {
+    #navbar {
+        position:fixed;
+    top:0;
+    left:0;
+    width:50px;
+    height:100%;
+    color:ghostwhite;
+    background-color:midnightblue;
+    }
+}
+
+
+html {
+    color:midnightblue;
+    background-color:ghostwhite;
+    font-family:arial, sans-serif;
+}
+
+a {color:midnightblue;}
+a:hover {color:purple;}
+
+#navbar {
+    position:fixed;
+    top:0;
+    left:0;
+    width:175px;
+    height:100%;
+    color:ghostwhite;
+    background-color:midnightblue;
+}
+nav ul {list-style-type: none;}
+
+.nav-link {
+  padding: 2px 0px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: ghostwhite;
+  display: block;
+  border-bottom:ghostwhite solid 1px;
+}
+
+#main-doc {
+    position:absolute; 
+    padding-left:175px;
+}

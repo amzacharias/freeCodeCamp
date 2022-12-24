@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Survey form project for
+      <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>
+    </p>
+    <!--Begin the form-->
+    <form id="survey-form">
+      <fieldset>
+        <!--User Inputs Text-->
+        <label id="name-label" for="name"
+          >Enter your name:
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="John Smith"
+            required
+          />
+        </label>
+        <label id="email-label" for="email">
+          Enter your email:
+          <input
+            id="email"
+            name="email"
+            type="email"
+            pattern="[a-z0-5]{8,}"
+            placeholder="johnsmith@email.com"
+            required
+          />
+        </label>
+        <label id="number-label" for="number">
+          Enter a number:
+          <input
+            id="number"
+            name="number"
+            type="number"
+            pattern="[0-9]}"
+            min="1"
+            max="9"
+            placeholder="Number between 1 and 9"
+          />
+        </label>
+        <!--Dropdown-->
+        <label for="dropdown">
+          Pick one:
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Cats are better than dogs</option>
+            <option value="2">Dogs are better than cats</option>
+            <option value="3">Cats and Dogs are equal</option>
+          </select>
+        </label>
+        <!--Checkboxes-->
+        <p class="leftalign">
+          Do you have strong feelings about the dog versus cat debate?
+        </p>
+        <label for="yes">
+          <input
+            class="inline"
+            type="radio"
+            id="yes"
+            name="yesno"
+            value="yes"
+          />Yes
+        </label>
+        <label for="no">
+          <input class="inline" type="radio" id="no" name="yesno" value="no" />No
+        </label>
+        <!--Multi-select Checkboxes-->
+        <p class="leftalign">Select a name if you like it for a pet:</p>
+        <label for="fluffy">
+          <input
+            class="inline"
+            type="checkbox"
+            id="fluffy"
+            name="petname"
+            value="fluffy"
+          />Fluffy
+        </label>
+        <label for="drevil">
+          <input
+            class="inline"
+            type="checkbox"
+            id="drevil"
+            name="petname"
+            value="drevil"
+          />Dr.Evil
+        </label>
+        <label for="mike">
+          <input
+            class="inline"
+            type="checkbox"
+            id="mike"
+            name="petname"
+            value="mike"
+          />Mike
+        </label>
+        <label for="sara">
+          <input
+            class="inline"
+            type="checkbox"
+            id="sara"
+            name="petname"
+            value="sara"
+          />Sara
+        </label>
+        <label for="oreo">
+          <input
+            class="inline"
+            type="checkbox"
+            id="oreo"
+            name="petname"
+            value="oreo"
+          />Oreo
+        </label>
+        <!--Text Area-->
+        <label for="extraText">
+          Please elaborate on your feelings here:
+          <textarea
+            id="extraText"
+            name="extraText"
+            rows="3"
+            cols="30"
+            placeholder="Cats are quite fluffy and loving..."
+          >
+          </textarea>
+          <!--Submit-->
+          <input id="submit" type="submit" value="Submit" />
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
